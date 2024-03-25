@@ -49,6 +49,13 @@ void findJourneysWithOneTransfer(const unordered_map<string, Stop>& stops, const
     }
 }
 
+// Function to find journeys with two transfers between source and destination stops
+void findJourneysWithTwoTransfers(const unordered_map<string, Stop>& stops, const unordered_map<string, Route>& routes, 
+                                  const string& source, const string& destination) {
+    cout << "Journeys with two transfers:" << endl;
+    // Implement logic to find journeys with two transfers here
+}
+
 // Function to parse GTFS data and construct stops and routes
 void parseGTFS(const vector<Route>& allRoutes, unordered_map<string, Stop>& stops, unordered_map<string, Route>& routes) {
     for (const auto& route : allRoutes) {
@@ -89,7 +96,8 @@ int main(int argc, char *argv[]) {
     // Find and print journeys with one transfer
     findJourneysWithOneTransfer(stops, routes, source, destination);
 
-    // Add logic to find and print journeys with two transfers if needed
+    // Find and print journeys with two transfers
+    findJourneysWithTwoTransfers(stops, routes, source, destination);
 
     return 0;
 }
