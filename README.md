@@ -1,10 +1,4 @@
 # IISC_assignemnt-
-Sure, here's a README file template you can use for both questions:
-
----
-Here's a README file for a Dijkstra's algorithm implementation:
-
----
 
 # Question 1 :Dijkstra's Algorithm Implementation
 
